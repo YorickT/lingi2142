@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Towards PYTH
+ip link set dev STEV-eth0 up
+ip address add dev STEV-eth0 fd00:3:0f34::4/64
+
+# Towards CARN
+ip link set dev STEV-eth1 up
+ip address add dev STEV-eth1 fd00:3:0f45::4/64
+
+bird6 -s /tmp/STEV.ctl

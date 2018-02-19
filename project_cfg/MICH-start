@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Towards SH1C
+ip link set dev MICH-eth0 up
+ip address add dev MICH-eth0 fd00:3:0f16::6/64
+
+# Towards CARN
+ip link set dev MICH-eth1 up
+Ip address add dev MICH-eth1 fd00:3:0f56::6/64
+
+bird6 -s /tmp/MICH.ctl

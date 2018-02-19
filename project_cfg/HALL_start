@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Towards SH1C
+ip link set dev HALL-eth0 up
+ip address add dev HALL-eth0 fd00:3:0f12::2/64
+
+# Towards PYTH
+ip link set dev HALL-eth1 up
+ip address add dev HALL-eth1 fd00:3:0f23::2/64
+
+bird6 -s /tmp/HALL.ctl
