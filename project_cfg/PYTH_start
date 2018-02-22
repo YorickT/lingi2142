@@ -13,6 +13,6 @@ ip link set dev PYTH-eth2 up
 ip address add dev PYTH-eth2 fd00:3:0f35::3/64
 
 # Towards POP
-ip address add dev pop200 fd00:200::3/48
+ip address add dev pop300 fd00:300::3/48
 
 bird6 -s /tmp/PYTH.ctl

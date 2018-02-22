@@ -10,7 +10,7 @@ CONFIGDIR=project_cfg
 BOOT="boot"
 # startup script name
 STARTUP="start"
-PREFIXBASE="fd00:200:${GROUPNUMBER}"
+PREFIXBASE="fd00:300:${GROUPNUMBER}"
 PREFIXLEN=48
 
 # This function describes the network topology that we want to emulate
