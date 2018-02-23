@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Load global config
+source "$(cd "$(dirname "$0")"; pwd -P)/../project_topo"
+
 # Towards HALL
 ip link set dev PYTH-eth0 up
 ip address add dev PYTH-eth0 fd00:3:0f23::3/64
