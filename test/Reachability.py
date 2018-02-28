@@ -2,32 +2,35 @@
 import os
 import subprocess
 
-os.chdir("..")
-out = os.Popen('ls')
-o = out.read()
-print(o)
+gPing = "1 recieved"
 
-call(["sudo","./create_network.sh","project_topo"])
+os.chdir("..")
+
+#subprocess.call(["sudo","./create_network.sh","project_topo"])
 
 locations = ["SH1C","HALL","PYTH","STEV","CARN","MICH"]
 
 prefixA = "fd00:3:0f"
 
-for loc in location :
-    call(["sudo","./connect_to.sh","project_cfg/",loc])
+print("--Start ping--")
 
-    for i in range(1,7) :
-        for j in range(1,7):
+for loc in locations :
+    with open("lingi2142/test/list_ip.txt") as list :
+        ip = list.readline()
+    	print(loc)
+        while ip:
+            #res = subprocess.Popen("sudo ip netns exec %s ping6 %s -c 1 -n -W 1" % (loc,ip), stdout=subprocess.PIPE,
+            #             stderr=subprocess.PIPE,shell=True)
+            #output,error = res.communicate()
+            #output = res.stdout.decode("utf-8")
+            output = subprocess.check_output("sudo ip netns exec %s ping6 %s -c 1 -n -W 1" % (loc,ip))
+            if (output.find(gPing)==-1) : print(ip+error)
+            #else : print("OK" + error)
+            ip = list.readline()
+        #    ip = prefixA+str(i)+str(j)+"::"+str(j)
+        #    res = subprocess.Popen("ip netns exec %s ping6 %s -c 1 -n -W 1" % (loc,ip), stdout=subprocess.PIPE,
+        #                 stderr=subprocess.PIPE, shell=True)
+        #    output,error = res.communicate()
+        #    if (output.find(gPing)==-1) : print(ip)
 
-#            call(["ping6",prefixA+str(i)+str(j)+"::"+str(i),"-c","1"])
-#            call(["ping6",prefixA+str(i)+str(j)+"::"+str(j),"-c","1"])
-
-            ip = prefixA+str(i)+str(j)+"::"+str(i)
-            res = subprocess.Popen("ping6 %s -c 1 -n -W 1" % (host, command), stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE, shell=True)
-            if (res.returncode) : print(ip)
-
-            ip = prefixA+str(i)+str(j)+"::"+str(j)
-            res = subprocess.Popen("ping6 %s -c 1 -n -W 1" % (host, command), stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE, shell=True)
-            if (res.returncode) : print(ip)
+#subprocess.call(["sudo","./cleanup.sh"])
