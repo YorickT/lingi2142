@@ -1,0 +1,3 @@
+ip link set dev MI1-eth0 up
+ip link add link MI1-eth0 name MI1-eth0.250 type vlan id 0x250
+ip link set dev MI1-eth0.250 up

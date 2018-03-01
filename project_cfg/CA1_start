@@ -1,0 +1,3 @@
+ip link set dev CA1-eth0 up
+ip link add link CA1-eth0 name CA1-eth0.250 type vlan id 0x250
+ip link set dev CA1-eth0.250 up
