@@ -6,6 +6,6 @@ ip address add dev SH1C-eth0 fd00:3:0f16::1/64
 
 # Towards HALL
 ip link set dev SH1C-eth1 up
-ip address add dev SH1C-eth0 fd00:3:0f12::1/64
+ip address add dev SH1C-eth1 fd00:3:0f12::1/64
 
 bird6 -s /tmp/SH1C.ctl
