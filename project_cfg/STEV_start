@@ -4,23 +4,23 @@
 ip link set dev STEV-eth0 up
 ip address add dev STEV-eth0 fd00:3:0f34::4/64
 
-# Towards CARN
+# Towards carn
 ip link set dev STEV-eth1 up
 ip address add dev STEV-eth1 fd00:3:0f45::4/64
 
 #Lan
-ip link set dev CARN-lan0 up
+ip link set dev STEV-lan0 up
 
-ip link add link CARN-lan0 name CARN-lan0.140 type vlan id 140
-ip link set dev CARN-lan0.140 up
-ip address add dev CARN-lan0.140 fd00:300:3:140::/64
+ip link add link STEV-lan0 name STEV-lan0.140 type vlan id 140
+ip link set dev STEV-lan0.140 up
+ip address add dev STEV-lan0.140 fd00:300:3:140::/64
 
-ip link add link CARN-lan0 name CARN-lan0.240 type vlan id 0x240
-ip link set dev CARN-lan0.240 up
-ip address add dev CARN-lan0.240 fd00:300:3:240::/64
+ip link add link STEV-lan0 name STEV-lan0.240 type vlan id 0x240
+ip link set dev STEV-lan0.240 up
+ip address add dev STEV-lan0.240 fd00:300:3:240::/64
 
-ip link add link CARN-lan0 name CARN-lan0.440 type vlan id 0x440
-ip link set dev CARN-lan0.440 up
-ip address add dev CARN-lan0.440 fd00:300:3:440::/64
+ip link add link STEV-lan0 name STEV-lan0.440 type vlan id 0x440
+ip link set dev STEV-lan0.440 up
+ip address add dev STEV-lan0.440 fd00:300:3:440::/64
 
 bird6 -s /tmp/STEV.ctl
