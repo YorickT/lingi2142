@@ -1,3 +1,3 @@
 ip link set dev SH1-eth0 up
-ip link add link SH1-eth0 name SH1-eth0.150 type vlan id 0x150
-ip link set dev SH1-eth0.150 up
+ip link add link SH1-eth0 name SH1-eth0.110 type vlan id 0x110
+ip link set dev SH1-eth0.110 up
