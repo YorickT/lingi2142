@@ -1,3 +1,5 @@
 ip link set dev ST2-eth0 up
 ip link add link ST2-eth0 name ST2-eth0.240 type vlan id 0x240
 ip link set dev ST2-eth0.240 up
+
+ip -6 route add ::/0 via fd00:300:3:240::

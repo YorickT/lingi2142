@@ -1,3 +1,5 @@
 ip link set dev SH1-eth0 up
 ip link add link SH1-eth0 name SH1-eth0.110 type vlan id 0x110
 ip link set dev SH1-eth0.110 up
+
+ip -6 route add ::/0 via fd00:300:3:110::

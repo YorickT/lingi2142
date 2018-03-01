@@ -2,11 +2,11 @@
 
 # Towards PYTH
 ip link set dev STEV-eth0 up
-ip address add dev STEV-eth0 fd00:3:0f34::4/64
+ip address add dev STEV-eth0 fd00:300:3:0f34::4/64
 
 # Towards carn
 ip link set dev STEV-eth1 up
-ip address add dev STEV-eth1 fd00:3:0f45::4/64
+ip address add dev STEV-eth1 fd00:300:3:0f45::4/64
 
 #Lan
 ip link set dev STEV-lan0 up

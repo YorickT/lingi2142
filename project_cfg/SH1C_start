@@ -2,11 +2,11 @@
 
 # Towards MICH
 ip link set dev SH1C-eth0 up
-ip address add dev SH1C-eth0 fd00:3:0f16::1/64
+ip address add dev SH1C-eth0 fd00:300:3:0f16::1/64
 
 # Towards HALL
 ip link set dev SH1C-eth1 up
-ip address add dev SH1C-eth1 fd00:3:0f12::1/64
+ip address add dev SH1C-eth1 fd00:300:3:0f12::1/64
 
 #Lan
 ip link set dev SH1C-lan0 up

@@ -2,15 +2,15 @@
 
 # Towards STEV
 ip link set dev CARN-eth0 up
-ip address add dev CARN-eth0 fd00:3:0f45::5/64
+ip address add dev CARN-eth0 fd00:300:3:0f45::5/64
 
 # Towards MICH
 ip link set dev CARN-eth1 up
-ip address add dev CARN-eth1 fd00:3:0f56::5/64
+ip address add dev CARN-eth1 fd00:300:3:0f56::5/64
 
 # Towards PYTH
 ip link set dev CARN-eth2 up
-ip address add dev CARN-eth2 fd00:3:0f35::5/64
+ip address add dev CARN-eth2 fd00:300:3:0f35::5/64
 
 #Lan
 ip link set dev CARN-lan0 up

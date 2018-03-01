@@ -5,15 +5,15 @@ source "$(cd "$(dirname "$0")"; pwd -P)/../project_topo"
 
 # Towards HALL
 ip link set dev PYTH-eth0 up
-ip address add dev PYTH-eth0 fd00:3:0f23::3/64
+ip address add dev PYTH-eth0 fd00:300:3:0f23::3/64
 
 # Towards STEV
 ip link set dev PYTH-eth1 up
-ip address add dev PYTH-eth1 fd00:3:0f34::3/64
+ip address add dev PYTH-eth1 fd00:300:3:0f34::3/64
 
 # Towards CARN
 ip link set dev PYTH-eth2 up
-ip address add dev PYTH-eth2 fd00:3:0f35::3/64
+ip address add dev PYTH-eth2 fd00:300:3:0f35::3/64
 
 # Towards POP
 ip address add dev pop300 fd00:300::3/48
