@@ -18,4 +18,19 @@ ip address add dev PYTH-eth2 fd00:3:0f35::3/64
 # Towards POP
 ip address add dev pop300 fd00:300::3/48
 
+#Lan
+ip link set dev PYTH-lan0 up
+
+ip link add link PYTH-lan0 name PYTH-lan0.130 type vlan id 130
+ip link set dev PYTH-lan0.130 up
+ip address add dev PYTH-lan0.130 fd00:300:3:130::/64
+
+ip link add link PYTH-lan0 name PYTH-lan0.230 type vlan id 0x230
+ip link set dev PYTH-lan0.230 up
+ip address add dev PYTH-lan0.230 fd00:300:3:230::/64
+
+ip link add link PYTH-lan0 name PYTH-lan0.430 type vlan id 0x430
+ip link set dev PYTH-lan0.430 up
+ip address add dev PYTH-lan0.430 fd00:300:3:430::/64
+
 bird6 -s /tmp/PYTH.ctl

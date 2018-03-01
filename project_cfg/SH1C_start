@@ -8,4 +8,19 @@ ip address add dev SH1C-eth0 fd00:3:0f16::1/64
 ip link set dev SH1C-eth1 up
 ip address add dev SH1C-eth1 fd00:3:0f12::1/64
 
+#Lan
+ip link set dev SH1C-lan0 up
+
+ip link add link SH1C-lan0 name SH1C-lan0.110 type vlan id 110
+ip link set dev SH1C-lan0.110 up
+ip address add dev SH1C-lan0.110 fd00:300:3:110::/64
+
+ip link add link SH1C-lan0 name SH1C-lan0.210 type vlan id 0x210
+ip link set dev SH1C-lan0.210 up
+ip address add dev SH1C-lan0.210 fd00:300:3:210::/64
+
+ip link add link SH1C-lan0 name SH1C-lan0.410 type vlan id 0x410
+ip link set dev SH1C-lan0.410 up
+ip address add dev SH1C-lan0.410 fd00:300:3:410::/64
+
 bird6 -s /tmp/SH1C.ctl
