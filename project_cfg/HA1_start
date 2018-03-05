@@ -2,4 +2,4 @@ ip link set dev HA1-eth0 up
 ip link add link HA1-eth0 name HA1-eth0.220 type vlan id 0x220
 ip link set dev HA1-eth0.220 up
 
-sleep 20; dhclient -6 -pf /var/run/dhclient_HA1.pid -S HA1-eth0.220
+ dhclient -6 -pf /var/run/dhclient_HA1.pid -S HA1-eth0.220
