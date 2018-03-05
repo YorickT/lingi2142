@@ -11,7 +11,7 @@ ip address add dev SH1C-eth1 fd00:300:3:0f12::1/64
 #Lan
 ip link set dev SH1C-lan0 up
 
-ip link add link SH1C-lan0 name SH1C-lan0.110 type vlan id 110
+ip link add link SH1C-lan0 name SH1C-lan0.110 type vlan id 0x110
 ip link set dev SH1C-lan0.110 up
 ip address add dev SH1C-lan0.110 fd00:300:3:110::/64
 

@@ -11,7 +11,7 @@ ip address add dev HALL-eth1 fd00:300:3:0f23::2/64
 #Lan
 ip link set dev -lan0 up
 
-ip link add link HALL-lan0 name HALL-lan0.120 type vlan id 120
+ip link add link HALL-lan0 name HALL-lan0.120 type vlan id 0x120
 ip link set dev HALL-lan0.120 up
 ip address add dev HALL-lan0.120 fd00:300:3:120::/64
 

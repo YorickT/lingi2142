@@ -4,7 +4,7 @@ import subprocess
 
 goodPing = "1 received"
 
-os.chdir("/home/vagrant/lingi2142")
+os.chdir("/home/vagrant/project/lingi2142")
 #subprocess.call(["sudo","./create_network.sh","project_topo"])
 t=subprocess.Popen("ls",stdout=subprocess.PIPE)
 print(t.communicate())

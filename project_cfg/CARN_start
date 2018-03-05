@@ -15,7 +15,7 @@ ip address add dev CARN-eth2 fd00:300:3:0f35::5/64
 #Lan
 ip link set dev CARN-lan0 up
 
-ip link add link CARN-lan0 name CARN-lan0.150 type vlan id 150
+ip link add link CARN-lan0 name CARN-lan0.150 type vlan id 0x150
 ip link set dev CARN-lan0.150 up
 ip address add dev CARN-lan0.150 fd00:300:3:150::/64
 

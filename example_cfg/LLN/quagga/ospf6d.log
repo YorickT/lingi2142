@@ -1,0 +1,74 @@
+2018/02/21 11:04:35 OSPF6: Cannot bind path /var/run/quagga/ospf6d.vty: No such file or directory
+2018/02/21 11:04:35 OSPF6: OSPF6d (Quagga-0.99.23.1 ospf6d-0.9.7r) starts: vty@2606
+2018/02/21 11:04:35 OSPF6: SPF: Scheduled in 200 msec
+2018/02/21 11:04:35 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 21 usec, Reason: R+, L+
+
+2018/02/21 11:04:36 OSPF6: SPF: Scheduled in 200 msec
+2018/02/21 11:04:37 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 35 usec, Reason: L+, L-
+
+2018/02/21 11:05:18 OSPF6: SPF: Scheduled in 200 msec
+2018/02/21 11:05:19 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 174 usec, Reason: R+, R-, N+, L+
+
+2018/02/21 11:05:19 OSPF6: SPF: Scheduled in 200 msec
+2018/02/21 11:05:19 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 45 usec, Reason: R+, N+
+
+2018/02/21 11:05:20 OSPF6: SPF: Scheduled in 200 msec
+2018/02/21 11:05:20 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 72 usec, Reason: R+, R-
+
+2018/02/21 11:05:21 OSPF6: SPF: Scheduled in 200 msec
+2018/02/21 11:05:21 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 79 usec, Reason: R+, R-
+
+2018/02/21 11:06:22 OSPF6: Terminating on signal SIGTERM
+2018/02/21 11:06:22 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:07 OSPF6: Cannot bind path /var/run/quagga/ospf6d.vty: No such file or directory
+2018/02/22 16:20:07 OSPF6: OSPF6d (Quagga-0.99.23.1 ospf6d-0.9.7r) starts: vty@2606
+2018/02/22 16:20:07 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:07 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 16 usec, Reason: R+, L+
+
+2018/02/22 16:20:08 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:08 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 30 usec, Reason: L+, L-
+
+2018/02/22 16:20:08 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:09 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 35 usec, Reason: L+, L-
+
+2018/02/22 16:20:50 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:50 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 73 usec, Reason: R+, R-, N+, L+
+
+2018/02/22 16:20:51 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:51 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 58 usec, Reason: R+, R-
+
+2018/02/22 16:20:56 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:56 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 56 usec, Reason: R+
+
+2018/02/22 16:20:57 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:20:57 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 76 usec, Reason: R+, R-, N+
+
+2018/02/22 16:21:01 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:21:01 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 130 usec, Reason: R+, R-
+
+2018/02/22 16:22:30 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:22:31 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 91 usec, Reason: R+, R-
+
+2018/02/22 16:22:38 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:22:38 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 69 usec, Reason: R+, R-
+
+2018/02/22 16:22:39 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:22:39 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 77 usec, Reason: R+, R-, N-
+
+2018/02/22 16:22:40 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:22:41 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 116 usec, Reason: R+, R-
+
+2018/02/22 16:24:03 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:24:03 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 141 usec, Reason: R+, R-
+
+2018/02/22 16:24:11 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:24:11 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 106 usec, Reason: R+, R-
+
+2018/02/22 16:24:13 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:24:13 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 84 usec, Reason: R+, R-
+
+2018/02/22 16:24:14 OSPF6: SPF: Scheduled in 200 msec
+2018/02/22 16:24:14 OSPF6: SPF processing: # Areas: 1, SPF runtime: 0 sec 91 usec, Reason: R+, R-
+
+2018/02/22 16:27:50 OSPF6: Terminating on signal SIGTERM
+2018/02/22 16:27:50 OSPF6: SPF: Scheduled in 200 msec
