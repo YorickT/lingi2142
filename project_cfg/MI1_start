@@ -2,4 +2,4 @@ ip link set dev MI1-eth0 up
 ip link add link MI1-eth0 name MI1-eth0.260 type vlan id 0x260
 ip link set dev MI1-eth0.260 up
 
-ip -6 route add ::/0 via fd00:300:3:260::
+sleep 20; dhclient -6 -pf /var/run/dhclient_MI1.pid -S MI1-eth0.260

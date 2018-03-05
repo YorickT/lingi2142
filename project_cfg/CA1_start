@@ -2,4 +2,4 @@ ip link set dev CA1-eth0 up
 ip link add link CA1-eth0 name CA1-eth0.250 type vlan id 0x250
 ip link set dev CA1-eth0.250 up
 
-ip -6 route add ::/0 via fd00:300:3:250::
+sleep 20; dhclient -6 -pf /var/run/dhclient_CA1.pid -S CA1-eth0.250
