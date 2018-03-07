@@ -1,0 +1,5 @@
+ip link set dev PY1-eth0 up
+ip link add link PY1-eth0 name PY1-eth0.430 type vlan id 0x430
+ip link set dev PY1-eth0.430 up
+
+sleep 5 ; dhclient -6 PY1-eth0.430
