@@ -2,8 +2,8 @@ ip link set dev HA1-eth0 up
 ip link add link HA1-eth0 name HA1-eth0.220 type vlan id 0x220
 ip link set dev HA1-eth0.220 up
 
-ip -6 route add fd00:300:3::/64 dev HA1-eth0.220
+ip -6 route add fd00:300:3:220::/64 dev HA1-eth0.220
 
-ip -6 route add default via fd00:300:3::
+ip -6 route add default via fd00:300:3:220::
 
  dhclient -6 -pf /var/run/dhclient_HA1.pid -S HA1-eth0.220

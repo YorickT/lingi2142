@@ -2,8 +2,8 @@ ip link set dev ST2-eth0 up
 ip link add link ST2-eth0 name ST2-eth0.240 type vlan id 0x240
 ip link set dev ST2-eth0.240 up
 
-ip -6 route add fd00:300:3::/64 dev ST2-eth0.240
+ip -6 route add fd00:300:3:240::/64 dev ST2-eth0.240
 
-ip -6 route add default via fd00:300:3::
+ip -6 route add default via fd00:300:3:240::
 
 dhclient -6 -pf /var/run/dhclient_ST2.pid -S ST2-eth0.240
