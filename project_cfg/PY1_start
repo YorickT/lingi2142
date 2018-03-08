@@ -7,5 +7,3 @@ ip -6 route add fd00:300:3::/64 dev PY1-eth0
 ip -6 route add default via fd00:300:3::
 
 dhclient -6 -pf /var/run/dhclient_PY1.pid -S PY1-eth0.430
-
-iperf -V -s &> /dev/null &

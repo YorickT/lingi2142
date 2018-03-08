@@ -2,4 +2,8 @@ ip link set dev PY2-eth0 up
 ip link add link PY2-eth0 name PY2-eth0.230 type vlan id 0x230
 ip link set dev PY2-eth0.230 up
 
+ip -6 route add fd00:300:3::/64 dev PY2-eth0
+
+ip -6 route add default via fd00:300:3::
+
 dhclient -6 -pf /var/run/dhclient_PY2.pid -S PY2-eth0.230

@@ -2,4 +2,8 @@ ip link set dev SH2-eth0 up
 ip link add link SH2-eth0 name SH2-eth0.410 type vlan id 0x410
 ip link set dev SH2-eth0.410 up
 
+ip -6 route add fd00:300:3::/64 dev SH2-eth0
+
+ip -6 route add default via fd00:300:3::
+
 dhclient -6 -pf /var/run/dhclient_SH2.pid -S SH2-eth0.410
