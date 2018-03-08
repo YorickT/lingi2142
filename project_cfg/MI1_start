@@ -2,7 +2,7 @@ ip link set dev MI1-eth0 up
 ip link add link MI1-eth0 name MI1-eth0.260 type vlan id 0x260
 ip link set dev MI1-eth0.260 up
 
-ip -6 route add fd00:300:3::/64 dev MI1-eth0
+ip -6 route add fd00:300:3::/64 dev MI1-eth0.260
 
 ip -6 route add default via fd00:300:3::
 

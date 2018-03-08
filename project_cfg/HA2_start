@@ -2,7 +2,7 @@ ip link set dev HA2-eth0 up
 ip link add link HA2-eth0 name HA2-eth0.120 type vlan id 0x120
 ip link set dev HA2-eth0.120 up
 
-ip -6 route add fd00:300:3::/64 dev HA2-eth0
+ip -6 route add fd00:300:3::/64 dev HA2-eth0.120
 
 ip -6 route add default via fd00:300:3::
 
