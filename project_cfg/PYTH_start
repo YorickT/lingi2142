@@ -19,18 +19,30 @@ ip address add dev PYTH-eth2 fd00:300:3:0f35::3/64
 ip address add dev pop300 fd00:300::3/48
 
 #LAN
+##LAN0
 ip link set dev PYTH-lan0 up
+ip address add dev PYTH-lan0 fd00:300:3:100::/64
 
-ip link add link PYTH-lan0 name PYTH-lan0.130 type vlan id 0x130
-ip link set dev PYTH-lan0.130 up
-ip address add dev PYTH-lan0.130 fd00:300:3:130::/64
+##LAN1
+ip link set dev PYTH-lan1 up
 
-ip link add link PYTH-lan0 name PYTH-lan0.230 type vlan id 0x230
-ip link set dev PYTH-lan0.230 up
-ip address add dev PYTH-lan0.230 fd00:300:3:230::/64
+ip link add link PYTH-lan1 name PYTH-lan1.130 type vlan id 0x130
+ip link set dev PYTH-lan1.130 up
+ip address add dev PYTH-lan1.130 fd00:300:3:130::/64
 
-ip link add link PYTH-lan0 name PYTH-lan0.430 type vlan id 0x430
-ip link set dev PYTH-lan0.430 up
-ip address add dev PYTH-lan0.430 fd00:300:3:430::/64
+ip link add link PYTH-lan1 name PYTH-lan1.230 type vlan id 0x230
+ip link set dev PYTH-lan1.230 up
+ip address add dev PYTH-lan1.230 fd00:300:3:230::/64
+
+ip link add link PYTH-lan1 name PYTH-lan1.330 type vlan id 0x330
+ip link set dev PYTH-lan1.330 up
+ip address add dev PYTH-lan1.330 fd00:300:3:330::/64
+
+ip link add link PYTH-lan1 name PYTH-lan1.430 type vlan id 0x430
+ip link set dev PYTH-lan1.430 up
+ip address add dev PYTH-lan1.430 fd00:300:3:430::/64
 
 bird6 -s /tmp/PYTH.ctl
+
+# DHCP relay
+dhcrelay -q -6 -l PYTH-lan1.130 -l PYTH-lan1.230 -l PYTH-lan1.430 -u fd00:300:3:103::1%PYTH-eth1 -u fd00:300:3:103::1%PYTH-eth2 -u fd00:300:3:204::1%PYTH-eth1 -u fd00:300:3:204::1%PYTH-eth2 --no-pid

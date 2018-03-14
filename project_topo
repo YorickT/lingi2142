@@ -28,7 +28,8 @@ function mk_topo {
     mk_LAN MICH MI1 MI2
     mk_LAN SH1C SH1 SH2
     mk_LAN HALL HA1 HA2
-    mk_LAN PYTH PY1 PY2
+    mk_LAN PYTH DHCP1 DNS1 #lan0
+    mk_LAN PYTH PY1 PY2 #lan1
     mk_LAN STEV ST1 ST2
     mk_LAN CARN CA1 CA2
 
