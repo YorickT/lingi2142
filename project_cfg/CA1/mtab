@@ -48,3 +48,6 @@
 /run/CA1 /run none rw,bind 0 0
 /run/CA1 /run none rw,bind 0 0
 /run/CA1 /run none rw,bind 0 0
+/run/CA1 /run none rw,bind 0 0
+/run/CA1 /run none rw,bind 0 0
+/run/CA1 /run none rw,bind 0 0

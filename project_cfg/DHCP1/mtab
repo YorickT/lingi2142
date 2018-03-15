@@ -17,3 +17,6 @@
 /run/DHCP1 /run none rw,bind 0 0
 /run/DHCP1 /run none rw,bind 0 0
 /run/DHCP1 /run none rw,bind 0 0
+/run/DHCP1 /run none rw,bind 0 0
+/run/DHCP1 /run none rw,bind 0 0
+/run/DHCP1 /run none rw,bind 0 0

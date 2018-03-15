@@ -49,3 +49,6 @@
 /run/HA1 /run none rw,bind 0 0
 /run/HA1 /run none rw,bind 0 0
 /run/HA1 /run none rw,bind 0 0
+/run/HA1 /run none rw,bind 0 0
+/run/HA1 /run none rw,bind 0 0
+/run/HA1 /run none rw,bind 0 0
