@@ -8,6 +8,7 @@ $TTL 10800
 @             IN        NS        ns1.group3.ingi.
 @             IN        NS        ns2.group3.ingi.
 @             IN        TXT       "zone group3"
-dns1          IN        AAAA      fd00:300:3:100::53
+ns1           IN        AAAA      fd00:300:3:100::53
+ns2           IN        AAAA      fd00:300:3:101::53
 website       IN        AAAA      fd00:300:3:100::80
 www.website   IN        CNAME     website
