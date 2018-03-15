@@ -8,5 +8,5 @@ $TTL 10800
 @          IN        NS        ns1.group3.ingi.
 @          IN        NS        ns2.group3.ingi.
 @          IN        TXT       "Service group3"
-DHCP1      IN        AAAA     fd00:300:3:330::547
+DHCP1      IN        AAAA     fd00:300:3:100::547
 NS1        IN        AAAA     fd00:300:3:100::53
