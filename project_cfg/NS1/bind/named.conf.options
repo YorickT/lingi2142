@@ -1,12 +1,11 @@
 
 acl intern_user {
-	fd00:200:3::/48;
 	fd00:300:3::/48;
 };
 
 options {
-       directory "/var/cache/bind/dns1";
-       pid-file  "/var/run/named_dns1.pid";
+       directory "/var/cache/bind/ns1";
+       pid-file  "/var/run/named_ns1.pid";
 
        // Exchange port between DNS servers
        //query-source address * port *;

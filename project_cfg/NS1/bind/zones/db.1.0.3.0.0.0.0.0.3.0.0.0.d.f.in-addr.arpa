@@ -9,5 +9,5 @@ $ORIGIN 1.0.3.0.0.0.0.0.3.0.0.0.d.f.ip6.arpa.
 @             IN        NS        ns1.group3.ingi.
 @             IN        NS        ns2.group3.ingi.
 0.8.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0    IN    PTR   DC1LB.service.group3.ingi.
-3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0    IN    PTR   DNS1.service.group3.ingi.
-7.4.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0    IN    PTR   DHCP1.service.group3.ingi. 
+3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0    IN    PTR   NS1.service.group3.ingi.
+7.4.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0    IN    PTR   DHCP1.service.group3.ingi.
