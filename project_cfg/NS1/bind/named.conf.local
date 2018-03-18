@@ -1,7 +1,3 @@
-//
-// Do any local configuration here
-//
-
 //Reverse of loadbalancer fd00:300:3:100::80
 zone 0.8.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.3.0.0.0.0.0.3.0.0.0.d.f.ip6.arpa IN{
     type master;
@@ -56,8 +52,3 @@ zone "1.0.3.0.0.0.0.0.2.0.0.0.d.f.ip6.arpa" IN {
     allow-query {intern_user;};
     allow-transfer {intern_user;};
 };
-
-
-// Consider adding the 1918 zones here, if they are not used in your
-// organization
-//include "/etc/bind/zones/zones.rfc1918";
